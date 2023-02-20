@@ -4,7 +4,7 @@ An Enhancment Userscript Project For Schoology That Provides Quality Of Life Cha
 <h1>⬇️ How To Install:</h1>
 <pre>
 1.) Install The Tampermonkey Extenstion From <a href="https://www.tampermonkey.net/">Here</a> To Your Web Browser
-2.) Once Installed, Click On The Latest Release On The Left Of The GitHub Page
+2.) Once Installed, Click On The Latest Release On The Right Of The GitHub Repository Page
 3.) Next, Click On The File With The ".js" Extenstion At The End
 4.) This Should Automaticly Open Tampermonkey(If Not Follow The Alternative Steps) And Click Install Userscript; You Are Good To Go!
  
