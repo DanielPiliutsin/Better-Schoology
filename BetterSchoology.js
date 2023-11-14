@@ -60,7 +60,7 @@ if (window.location.pathname === "/options") {
   const title = document.createElement("H1");
   title.innerText = "Options";
   document.body.appendChild(title);
-  let fontOptions = ['Comic Sans MS', 'Verdana', 'Helvetica', 'Times New Roman', 'Courier New', 'Arial'];
+  let fontOptions = ['Comic Sans MS', 'Verdana', 'Helvetica', 'Times New Roman', 'Courier New', 'Arial', 'Georgia', 'Garamond', 'Palatino', 'Book Antiqua', 'Tahoma', 'Trebuchet MS', 'Impact', 'Lucida Sans', 'Lucida Console', 'Lucida Grande', 'Geneva', 'Arial Narrow', 'Arial Black', 'Century Gothic', 'Franklin Gothic Medium', 'Futura', 'Gill Sans', 'Baskerville', 'Didot', 'Hoefler Text', 'Optima', 'Rockwell', 'Andale Mono', 'Consolas', 'Courier', 'Monaco', 'Copperplate', 'Papyrus', 'Brush Script MT', 'Zapfino', 'Chalkboard', 'Marker Felt', 'Bradley Hand', 'Snell Roundhand', 'Segoe UI', 'Roboto', 'Lato', 'Open Sans', 'Oswald', 'Raleway', 'Montserrat', 'Noto Sans', 'Noto Serif', 'PT Sans', 'PT Serif', 'Source Sans Pro', 'Source Serif Pro', 'Merriweather', 'Lora', 'Arvo', 'Playfair Display', 'Crimson Text', 'Libre Baskerville', 'Bitter', 'EB Garamond', 'Old Standard TT', 'Vollkorn', 'Cardo', 'Alegreya', 'Alegreya Sans', 'Karla', 'Fira Sans', 'Fira Mono', 'Inconsolata', 'Ubuntu', 'Ubuntu Mono', 'Droid Sans', 'Droid Serif', 'Droid Sans Mono', 'Roboto Slab', 'Roboto Condensed', 'Roboto Mono', 'Nunito', 'Nunito Sans', 'Muli', 'Quicksand', 'Work Sans', 'Poppins', 'Hind', 'Rubik', 'Titillium Web', 'Asap', 'Barlow', 'Inter', 'Heebo', 'IBM Plex Sans', 'IBM Plex Serif', 'IBM Plex Mono'];
   let currentFontIndex = localStorage.getItem('currentFontIndex') || 0;
   const currentFontOutput = document.createElement("div")
   currentFontOutput.innerText = ("Press 'F' to change the font, the current Font is set to: " + fontOptions[currentFontIndex]);
@@ -138,7 +138,7 @@ if (window.location.pathname === "/home") {
 }
 // Initialize a variable to hold different font names
 let currentFontIndex = localStorage.getItem('currentFontIndex') || 0;
-const fontOptions = ['Comic Sans MS', 'Verdana', 'Helvetica', 'Times New Roman', 'Courier New', 'Arial'];
+const fontOptions = ['Comic Sans MS', 'Verdana', 'Helvetica', 'Times New Roman', 'Courier New', 'Arial', 'Georgia', 'Garamond', 'Palatino', 'Book Antiqua', 'Tahoma', 'Trebuchet MS', 'Impact', 'Lucida Sans', 'Lucida Console', 'Lucida Grande', 'Geneva', 'Arial Narrow', 'Arial Black', 'Century Gothic', 'Franklin Gothic Medium', 'Futura', 'Gill Sans', 'Baskerville', 'Didot', 'Hoefler Text', 'Optima', 'Rockwell', 'Andale Mono', 'Consolas', 'Courier', 'Monaco', 'Copperplate', 'Papyrus', 'Brush Script MT', 'Zapfino', 'Chalkboard', 'Marker Felt', 'Bradley Hand', 'Snell Roundhand', 'Segoe UI', 'Roboto', 'Lato', 'Open Sans', 'Oswald', 'Raleway', 'Montserrat', 'Noto Sans', 'Noto Serif', 'PT Sans', 'PT Serif', 'Source Sans Pro', 'Source Serif Pro', 'Merriweather', 'Lora', 'Arvo', 'Playfair Display', 'Crimson Text', 'Libre Baskerville', 'Bitter', 'EB Garamond', 'Old Standard TT', 'Vollkorn', 'Cardo', 'Alegreya', 'Alegreya Sans', 'Karla', 'Fira Sans', 'Fira Mono', 'Inconsolata', 'Ubuntu', 'Ubuntu Mono', 'Droid Sans', 'Droid Serif', 'Droid Sans Mono', 'Roboto Slab', 'Roboto Condensed', 'Roboto Mono', 'Nunito', 'Nunito Sans', 'Muli', 'Quicksand', 'Work Sans', 'Poppins', 'Hind', 'Rubik', 'Titillium Web', 'Asap', 'Barlow', 'Inter', 'Heebo', 'IBM Plex Sans', 'IBM Plex Serif', 'IBM Plex Mono'];
 
 // Add your own styles to make the profile pictures round and slightly smaller
 let style = document.createElement('style');
