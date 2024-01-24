@@ -7,6 +7,7 @@
 // @match        https://*.schoology.com/*
 // @icon         https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://github.com&size=64
 // @grant        none
+// @updateURL    https://github.com/DanielPiliutsin/Better-Schoology/raw/main/BetterSchoology.user.js
 // @downloadURL  https://github.com/DanielPiliutsin/Better-Schoology/raw/main/BetterSchoology.user.js
 // ==/UserScript==
 
@@ -255,3 +256,4 @@ for (let i = 0; i < links.length; i++) {
   }
 }
 
+// check for update functionality, ignore
