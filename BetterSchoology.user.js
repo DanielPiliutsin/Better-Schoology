@@ -7,6 +7,7 @@
 // @match        https://*.schoology.com/*
 // @icon         https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://github.com&size=64
 // @grant        none
+// @downloadURL  https://github.com/DanielPiliutsin/Better-Schoology/raw/main/BetterSchoology.user.js
 // ==/UserScript==
 
 if (!localStorage.getItem("bsWelcomeMessageDismissed")) {
@@ -208,24 +209,49 @@ document.addEventListener('keydown', function (event) {
     // Find the original element
     var originalElement = document.querySelector('a._13cCs._2M5aC._24avl._3ghFm._3LeCL._31GLY._9GDcm._1D8fw.util-height-six-3PHnk.util-pds-icon-default-2kZM7._1SIMq._2kpZl._3OAXJ._3_bfp._3v0y7._2s0LQ.util-line-height-six-3lFgd.util-text-decoration-none-1n0lI.Header-header-button-active-state-3AvBm.Header-header-button-1EE8Y.sExtlink-processed');
 
-    // Check if the element exists
-    if (originalElement) {
-        // Clone the element
-        var clonedElement = originalElement.cloneNode(true);
-
-        // Modify the text and href of the cloned element
-        clonedElement.textContent = 'Options';
-        clonedElement.href = '/options';
-
-        // Insert the cloned element after the original element
-        originalElement.parentNode.insertBefore(clonedElement, originalElement.nextSibling);
-
-        var clonedElement2 = originalElement.cloneNode(true);
-
-        // Modify the text and href of the cloned element
-        clonedElement2.textContent = 'Updates';
-        clonedElement2.href = 'https://github.com/DanielPiliutsin/Better-Schoology';
-
-        // Insert the cloned element after the original element
-        originalElement.parentNode.insertBefore(clonedElement2, originalElement.nextSibling);
+// Check if the element exists
+if (originalElement) {
+    // Function to handle the click event
+    function handleClick(event, targetUrl) {
+        event.preventDefault();
+        window.open(targetUrl, '_blank'); // Open link in a new tab
     }
+
+    // Clone the element for 'Options'
+    var clonedElement = originalElement.cloneNode(true);
+    clonedElement.textContent = 'Options';
+    clonedElement.href = '/options';
+
+    originalElement.parentNode.insertBefore(clonedElement, originalElement.nextSibling);
+
+    // Clone the element for 'Updates'
+    var clonedElement2 = originalElement.cloneNode(true);
+    clonedElement2.textContent = 'Updates';
+    clonedElement2.href = 'https://github.com/DanielPiliutsin/Better-Schoology/'; // Use javascript:void(0) to prevent default link behavior
+;
+    originalElement.parentNode.insertBefore(clonedElement2, originalElement.nextSibling);
+
+    // Clone the element for 'AP'
+    var clonedElement3 = originalElement.cloneNode(true);
+    clonedElement3.textContent = 'AP';
+    clonedElement3.href = 'https://myap.collegeboard.org/'; // Use javascript:void(0) to prevent default link behavior
+
+    originalElement.parentNode.insertBefore(clonedElement3, originalElement.nextSibling);
+}
+
+
+// Get all links on the page
+const links = document.getElementsByTagName('a');
+
+// Loop through each link and replace its href attribute
+for (let i = 0; i < links.length; i++) {
+  const link = links[i];
+  const originalHref = link.href;
+  if (!originalHref.includes('schoology.com') && !originalHref.includes('.schoology.com/')) {
+    link.href = 'javascript:void(0)'; // Use javascript:void(0) to prevent default link behavior
+    link.addEventListener('click', function (event) {
+       handleClick(event, originalHref);
+    });
+  }
+}
+
