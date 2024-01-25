@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Better Schoology
 // @namespace    http://tampermonkey.net/
-// @version      Prerelease_Morning_Desert
+// @version      1.1
 // @description  Schoology Enhancment Project
 // @author       github.com/danielpiliutsin
 // @match        https://*.schoology.com/*
