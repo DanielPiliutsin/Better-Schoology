@@ -16,3 +16,4 @@ An Enhancment Userscript Project For Schoology That Provides Quality Of Life Cha
 5.) Now Copy All The Code Within The ".js" file And Paste It Within The Tampermonkey Text Window
 6.) Now In Tampermonkey, Press "CTRL+S" And You Are Good To Go!
 </pre>
+Supported until: <b>May, 2025</b>
