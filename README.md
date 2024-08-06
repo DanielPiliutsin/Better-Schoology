@@ -1,4 +1,4 @@
-# Better Schoology
+# ENDED SUPPORT DUE TO DISUSE OF SCHOOLOGY (Better Google Classrooms Soon... Maybe)
 An Enhancment Userscript Project For Schoology That Provides Quality Of Life Changes And New Customization Features
 <img src="https://cdn.discordapp.com/attachments/1055995168144236605/1077011247473635418/Screenshot_from_2023-02-19_18-36-05.png">
 <h1>⬇️ How To Install:</h1>
@@ -16,4 +16,4 @@ An Enhancment Userscript Project For Schoology That Provides Quality Of Life Cha
 5.) Now Copy All The Code Within The ".js" file And Paste It Within The Tampermonkey Text Window
 6.) Now In Tampermonkey, Press "CTRL+S" And You Are Good To Go!
 </pre>
-Supported until: <b>May, 2025</b>
+Supported until: <b>May, 2024</b>
